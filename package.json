@@ -9,20 +9,15 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
     "autoprefixer": "^7.1.x",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "cross-env": "^5.0.5",
-    "css-loader": "^0.28.7",
-    "file-loader": "^1.1.4",
-    "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4",
     "browser-sync": "^2.24.7",
+    "del": "^4.1.0",
     "gulp": "^4.0.0",
-    "gulp-babel": "^7.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-cheerio": "^0.6.2",
+    "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.3",
     "gulp-file-include": "^1.1.0",
@@ -33,20 +28,12 @@
     "gulp-postcss": "^7.0.x",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svgmin": "^1.2.4",
     "gulp-svgstore": "^6.1.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-webp": "^2.3.0",
-    "gulp-size": "^2.1.0",
-    "gulp-rimraf": "^0.2.2",
-    "uglifyjs-webpack-plugin": "^1.3.0",
-    "webpack-stream": "^4.0.3"
-  },
-  "dependencies": {
-    "vue": "^2.5.11",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "gulp-webp": "^2.3.0"
   },
   "editorconfig-cli": [
     "src/**/*.html",
@@ -62,5 +49,8 @@
     "build": "gulp build",
     "production": "cross-env NODE_ENV=production gulp production",
     "webp": "gulp webp"
+  },
+  "dependencies": {
+    "svgxuse": "^1.2.6"
   }
 }
